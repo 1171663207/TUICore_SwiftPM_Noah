@@ -12,7 +12,8 @@ let package = Package(
             targets: ["TUICore_SwiftPM"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0")
+        .package(url: "https://github.com/SDWebImage/SDWebImage", from: "5.1.0"),
+        .package(url: "https://github.com/Tencent-RTC/Chat_SDK_SwiftPM", from: "8.3.6498")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -26,7 +27,8 @@ let package = Package(
             name: "TUICore_SwiftPM",
             dependencies: [
                 .target(name: "TUICore"),
-                .product(name: "SDWebImage", package: "SDWebImage")
+                .product(name: "SDWebImage", package: "SDWebImage"),
+                .product(name: "Chat_SDK_SwiftPM", package: "Chat_SDK_SwiftPM")
             ]),
         .testTarget(
             name: "TUICore_SwiftPMTests",
