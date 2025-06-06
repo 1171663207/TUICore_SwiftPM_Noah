@@ -27,7 +27,6 @@ let package = Package(
             name: "TUICore_SwiftPM",
             dependencies: [
                 .target(name: "TUICore"),
-                .product(name: "SDWebImage", package: "SDWebImage"),
                 .product(name: "Chat_SDK_SwiftPM", package: "Chat_SDK_SwiftPM")
             ]),
         .testTarget(
