@@ -20,7 +20,7 @@ let package = Package(
         .binaryTarget(
             name: "TUICore",
             url: "https://liteav.sdk.qcloud.com/app/tuikit/download/customer/zhenxin/8.5/TUICore.xcframework.zip",
-            checksum: "24885edc759e01386d66236d13f4f83b307dc89f"
+            checksum: "5bd2ca23dbfc0743013a5fcc733068c086fa61e1f888e1de0bcb0728836ac20e"
         ),
         .target(
             name: "TUICore_SwiftPM",
