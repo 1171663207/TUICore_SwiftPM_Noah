@@ -29,11 +29,6 @@ let package = Package(
                 "TUICore",
                 .product(name: "Chat_SDK_SwiftPM", package: "Chat_SDK_SwiftPM"),
                 .product(name: "SDWebImage", package: "SDWebImage"),
-            ],
-            linkerSettings: [
-                .linkedFramework("AVKit"),
-                .linkedFramework("AVFoundation"),
-                .unsafeFlags(["-ObjC"])
             ]),
         .testTarget(
             name: "TUICore_SwiftPMTests",
