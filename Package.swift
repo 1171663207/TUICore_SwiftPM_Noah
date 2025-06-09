@@ -9,12 +9,11 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "TUICore_SwiftPM",
-            type: .static,
             targets: ["TUICore_SwiftPM"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Tencent-RTC/Chat_SDK_SwiftPM", from: "8.3.6498"),
-        .package(url: "https://github.com/SDWebImage/SDWebImage", from: "5.21.0")
+        .package(url: "https://github.com/1171663207/SDWebImage", from: "5.21.1")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
