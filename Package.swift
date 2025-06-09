@@ -13,7 +13,6 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Tencent-RTC/Chat_SDK_SwiftPM", from: "8.3.6498"),
-        .package(url: "https://github.com/1171663207/SDWebImage", from: "5.21.1")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -23,18 +22,17 @@ let package = Package(
             url: "https://liteav.sdk.qcloud.com/app/tuikit/download/customer/zhenxin/8.5/TUICore.xcframework.zip",
             checksum: "5bd2ca23dbfc0743013a5fcc733068c086fa61e1f888e1de0bcb0728836ac20e"
         ),
-//        .binaryTarget(
-//            name: "SDWebImage",
-//            url: "https://liteav.sdk.qcloud.com/app/tuikit/download/customer/zhenxin/SDWebImage.xcframework.zip",
-//            checksum: "0ed073b7b4c872e44b7b06634e8fbb4f91f7f2aed84a3522c8a8e515fb7c28e7"
-//        ),
+        .binaryTarget(
+            name: "SDWebImage",
+            url: "https://github.com/SDWebImage/SDWebImage/releases/download/5.21.0/SDWebImage-dynamic.xcframework.zip",
+            checksum: "e034ea04f5e86866bc3081d009941bd5b2a2ed705b3a06336656484514116638"
+        ),
         .target(
             name: "TUICore_SwiftPM",
             dependencies: [
-//                "SDWebImage",
+                "SDWebImage",
                 "TUICore",
                 .product(name: "Chat_SDK_SwiftPM", package: "Chat_SDK_SwiftPM"),
-                .product(name: "SDWebImage", package: "SDWebImage"),
             ]),
         .testTarget(
             name: "TUICore_SwiftPMTests",
