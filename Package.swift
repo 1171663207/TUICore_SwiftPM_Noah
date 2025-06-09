@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "TUICore_SwiftPM",
-            type: .dynamic,
+            type: .static,
             targets: ["TUICore_SwiftPM"]),
     ],
     dependencies: [
