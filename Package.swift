@@ -12,7 +12,7 @@ let package = Package(
             targets: ["TUICore_SwiftPM"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Tencent-RTC/Chat_SDK_SwiftPM", from: "8.3.6498"),
+        .package(url: "https://github.com/Tencent-RTC/Chat_SDK_SwiftPM", from: "8.5.6864"),
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.0.1")
     ],
     targets: [
