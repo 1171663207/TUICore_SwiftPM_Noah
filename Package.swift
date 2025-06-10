@@ -20,7 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
             name: "TUICore",
-            url: "https://liteav.sdk.qcloud.com/app/tuikit/download/customer/zhenxin/8.5/TUICore.xcframework.zip",
+            url: "https://liteav.sdk.qcloud.com/app/tuikit/download/customer/zhenxin/im/8.6/TUICore_8.6.7020.xcframework.zip",
             checksum: "5bd2ca23dbfc0743013a5fcc733068c086fa61e1f888e1de0bcb0728836ac20e"
         ),
         .target(

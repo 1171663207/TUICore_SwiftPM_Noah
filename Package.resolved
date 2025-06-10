@@ -1,5 +1,5 @@
 {
-  "originHash" : "3d32cc113d4190aeff627598dee28d1474f8f388f5b73d4183d5122020dc5f85",
+  "originHash" : "a187f1d65ee3689aa290d9b20ec053cf5af557a120e5abfed4a6a6526089abcc",
   "pins" : [
     {
       "identity" : "chat_sdk_swiftpm",
